@@ -44,10 +44,6 @@ func resourceBoardRead(ctx context.Context, data *schema.ResourceData, meta inte
 		return diags
 	}
 
-	if err := data.Set("boards", board); err != nil {
-		return diag.FromErr(err)
-	}
-
 	data.SetId(board.ID)
 	return diags
 }
