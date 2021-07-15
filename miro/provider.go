@@ -21,6 +21,7 @@ func Provider() *schema.Provider {
 		},
 		ResourcesMap: map[string]*schema.Resource{
 			"miro_board": resourceBoard(),
+			"miro_team": resourceTeam(),
 		},
 		DataSourcesMap:       map[string]*schema.Resource{},
 		ConfigureContextFunc: providerConfigureFunc,
