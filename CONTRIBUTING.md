@@ -42,6 +42,14 @@ Build this provider.
 $ go build
 ```
 
+Install the provider locally (terraform v0.12).
+
+```console
+$ chmod +x terraform-provider-miro
+$ mkdir -p ${HOME}/.terraform.d/plugins/${GOOS}_${GOARCH}/
+$ cp terraform-provider-miro ${HOME}/.terraform.d/plugins/${GOOS}_${GOARCH}/
+```
+
 Then run the Terraform operations.
 
 ```console
