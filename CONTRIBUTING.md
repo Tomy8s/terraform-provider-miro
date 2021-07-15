@@ -32,7 +32,7 @@ Create a `provider.tf`.
 
 ```hcl
 provider "miro" {
-  access_key = "<MASKED>"
+  access_token = "<MASKED>"
 }
 ```
 
